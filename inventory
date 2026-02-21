@@ -1,0 +1,15 @@
+[web]
+app01 ansible_host=192.168.56.11
+app02 ansible_host=192.168.56.13
+
+
+[web:vars]
+ansible_user=ansible
+ansible_become=true
+
+[db]
+db01 ansible_host=192.168.56.12
+
+[all:vars]
+ansible_user=ansible
+ansible_ssh_private_key_file=/home/ansible/.ssh/id_ed25519

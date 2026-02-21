@@ -1,0 +1,20 @@
+- name: Setup Web Servers
+  hosts: web
+  become: yes
+
+  tasks:
+    - name: Install nginx
+      apt:
+        name: "{{ nginx_package }}" 
+        state: present
+
+    - name: Ensure nginx is running
+      service:
+        name: "{{ nginx_service }}"
+        state: started
+        enabled: true
+
+    - name: Deploy test HTML
+      template:
+        src: templates/index.html.j2
+        dest: /var/www/html/index.html
