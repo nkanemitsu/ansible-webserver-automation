@@ -42,6 +42,17 @@ ansible-practice/
  |----defaults/
   ----README.md
 
+
+## Design Philosophy
+
+This project focuses on:
+- Declarative configuration
+- Idempotency
+- Maintainable structure using Roles
+- Separation of concerns
+
+Rather than executing commands, the playbook defines the desired state of the infrastructure.
+
  
 ## Key Concepts Demonstrated
 
