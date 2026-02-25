@@ -1,2 +1,6 @@
 ---
 # defaults file for roles/webserver
+nginx_package: nginx
+nginx_service: nginx
+nginx_port: 80
+nginx_message: "default message"

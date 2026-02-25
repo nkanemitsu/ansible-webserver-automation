@@ -1,3 +1,8 @@
+# Vault password file
+.vault_pass
+~/.vault_pass
+
+# backup files
 *.retry
 *.log
 *.tmp
